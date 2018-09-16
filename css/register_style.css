@@ -1,0 +1,74 @@
+*{
+	margin:0 auto;
+	padding:0 auto;
+	font-family: "Trirong Regular";
+}
+
+html{
+	height:100%;
+	width:100%;
+}
+
+body{
+	height:100%;
+	margin:0;
+	padding: 0;
+}
+
+::-webkit-input-placeholder, select{
+  color: #000 !important;
+}
+
+@media screen and (min-width:1023px){
+
+
+			.cont_reg{
+					padding: 40px;
+					border: solid 1px #000;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+			}
+
+					.cont_reg .cont_img img{
+							height:400px;
+							width: 100%;
+					}
+
+					.cont_reg div{
+
+					}
+							.cont_info{
+									height: 100%;
+									padding: 5px;
+							}
+									.cont_info input, .cont_info select{
+											width: 100%;
+											margin-bottom: 10px;
+											position: relative;
+											left: 50%;
+											transform: translateX(-50%);
+											display: block;
+											outline: none !important;
+											padding-left: 10px;
+											padding-right: 10px;
+											font-size: 18px;
+											border: none ;
+											border-bottom: solid 2px #000;
+									}
+									.cont_info input{
+										padding-left: 15px;
+									}
+
+
+}
+
+@media screen and (max-width:1023px){
+
+}
+
+@media screen and (max-width: 750px) {
+
+
+
+}

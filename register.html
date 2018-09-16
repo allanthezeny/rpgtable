@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>RpgTable</title>
+
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/register_style.css">
+
+</head>
+<body>
+
+
+    <div class="col-md-10 col-md-offset-1 cont_reg animate fadeIn">
+
+          <div class="cont_img col-md-5 col-md-offset-0">
+              <button onclick=""> < </button>
+              <button onclick=""> > </button>
+              <img class="col-md-8 col-md-offset-2" src="image/classes/null.jpg"/>
+          </div>
+
+          <div class="form-group cont_info col-md-6 col-md-offset-1">
+
+              <div class="col-md-8 col-md-offset-2">
+                  <input type="text" placeholder="Nome"/>
+              </div>
+              <div class="col-md-8 col-md-offset-2">
+                <select class="col-sm-12">
+                          <option value="" hidden selected>Profissão</option>
+                          <option value="guerreiro">Guerreiro</option>
+                          <option value="mago">Mago</option>
+                </select>
+              </div>
+
+              <div class="col-md-8 col-md-offset-2">
+
+                  <table class="table ">
+
+                        <tr>
+                          <th>HP</th>
+                          <th id="hp"></th>
+                        </tr>
+                        <tr>
+                          <th>MP</th>
+                          <th id="mp"></th>
+                        </tr>
+                        <tr>
+                          <th>Força</th>
+                          <th id="for"></th>
+                        </tr>
+                        <tr>
+                          <th>Agilidade</th>
+                          <th id="agi"></th>
+                        </tr>
+                        <tr>
+                          <th>Inteligencia</th>
+                          <th id="int"></th>
+                        </tr>
+                        <tr>
+                          <th>Vitalidade</th>
+                          <th id="vit"></th>
+                        </tr>
+                        <tr>
+                          <th>Destreza</th>
+                          <th id="des"></th>
+                        </tr>
+                        <tr>
+                          <th>Sorte</th>
+                          <th id="sor"></th>
+                        </tr>
+                  </table>
+
+              </div>
+
+
+          </div>
+
+
+    </div>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/register_default.js"></script>
+</body>
+</html>
