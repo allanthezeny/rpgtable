@@ -1,2 +1,2 @@
 # rpgtable
-rpgtable, para mestres de rpg
+ Auxilo de jogos de rpg de mesa

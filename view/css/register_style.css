@@ -41,22 +41,23 @@ body{
 							}
 
 									.cont_img .button{
-										display: none;
-										position: absolute;
-										top: 50%;
-										transform: translateY(-50%);
-										right: 0px;
-										z-index: 10;
-										height: 50%;
-										width: 60px;
-										border: none;
-										opacity: 0.3;
-										outline: none;
+											display: none;
+											position: absolute;
+											top: 50%;
+											transform: translateY(-50%);
+											right: 0px;
+											z-index: 10;
+											height: 50%;
+											width: 60px;
+											border: none;
+											opacity: 0.3;
+											outline: none;
 									}
 											.cont_img .button:hover{
-												display: block;
-												opacity: 0.8;
-												outline: none;
+													cursor: pointer;
+													display: block;
+													opacity: 0.8;
+													outline: none;
 											}
 
 
@@ -80,9 +81,8 @@ body{
 											border-bottom: solid 2px #000;
 									}
 									.cont_info input{
-										padding-left: 15px;
+											padding-left: 15px;
 									}
-
 
 
 }

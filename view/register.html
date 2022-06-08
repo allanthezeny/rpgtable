@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>RpgTable</title>
+
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/register_style.css">
+
+</head>
+<body>
+
+
+    <form id="cadclass_form" method="post" accept-charset="utf-8"
+        class="col-md-10 col-md-offset-1 cont_reg animate fadeIn">
+
+          <div class="cont_img col-md-6 col-md-offset-0">
+              <img src="image/seta.png" class="button change" onclick="change(1)"/>
+              <input type="hidden" id="val_img" value="0">
+              <img id="img_per" class="col-md-8 col-md-offset-2" src="image/classes/null.jpg"/>
+          </div>
+
+          <div class="form-group cont_info col-md-6 col-md-offset-0">
+
+              <div class="col-md-8 col-md-offset-2">
+                  <input type="text" name="nome" placeholder="Nome"/>
+              </div>
+              <div class="col-md-8 col-md-offset-2">
+                <select id="profissao" name="classe" class="col-sm-12">
+
+                </select>
+              </div>
+
+              <div class="col-md-8 col-md-offset-2" id="tablestatus">
+
+
+              </div>
+
+              <input type="submit" class="btn btn-success" />
+
+          </div>
+
+
+    </form>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/register_default.js"></script>
+</body>
+</html>

@@ -1,10 +1,11 @@
-
 $(document).ready(function(){
 
+      getClass();
 
       $("#profissao").change(function(){
-          if( $("#profissao").val() != "" ){
+          if( $(this).val() != "" ){
               $(".cont_img .button").css('display','block');
+              showStatus($(this).val());
           }else{
               $(".cont_img .button").css('display','none');
           }
@@ -12,12 +13,50 @@ $(document).ready(function(){
       });
 
 
+      $("#cadclass_form").submit(function(e){
+          e.preventDefault();
+
+            $.ajax({
+                url: "../controller/register/cadclasse.php",
+                type: "POST",
+                data: $(this).serialize(),
+                success: function(data){
+                    alert("Cadastrado com sucesso!!");
+                },
+                error: function(data){
+                    alert("ERRO, Ulysses deve ter dado Update sem WHERE !!");
+                }
+            });
+
+       });
+
 
 });
 
 
+function showStatus(classe){
+
+      $.post("../controller/register/showstatus.php", {
+        classe: classe
+      },
+      function(data){
+          $("#tablestatus").html(data);
+      });
+
+}
 
 
+
+
+function getClass(){
+
+      $.post("../controller/register/getclass.php", {
+      },
+      function(data){
+          $("#profissao").html(data);
+      });
+
+}
 
 
 
